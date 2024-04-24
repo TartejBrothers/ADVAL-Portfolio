@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-color: #000000;
+}
+.homemain {
+  padding: 20px;
+  background-image: url("../assests/homebg.png");
+  height: 100vh;
+  background-position: center center;
+  background-color: #1b052d;
+}
+.navbar {
+  background-color: #1f0238;
+  border: solid 1px #7015c9;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navleft {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  font-weight: 800;
+  text-align: center;
+}
+.navleft p {
+  display: flex;
+  font-size: 16px;
+  gap: 5px;
+}
+.colorChange {
+  color: #6b12bf;
+}
+.navright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.navright ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.navright ul li {
+  list-style-type: none;
+}
+
+.contactbtn {
+  background-color: #771bbe;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
