@@ -17,6 +17,7 @@ body {
   height: 100vh;
   background-position: center center;
   background-color: #1b052d;
+  overflow: hidden;
 }
 .navbar {
   background-color: #1f0238;
@@ -65,4 +66,57 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
+}
+
+.homecenter {
+  height: calc(90vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homecenter h1 {
+  display: inline;
+  font-size: 40px;
+}
+.colorYellow {
+  color: #ffc100;
+}
+.homecenter p {
+  width: 60%;
+  font-size: 20px;
+  margin: 30px 0;
+}
+.homecenter button {
+  background-color: #771bc8;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+}
+.homebottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+  align-items: center;
+}
+.homebutton1 {
+  background: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 2px solid #54039d;
+}
+.homebutton2 {
+  background-color: #360a60;
+  border-radius: 100%;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homebutton2 img {
+  height: 15px;
+  width: 15px;
 }
