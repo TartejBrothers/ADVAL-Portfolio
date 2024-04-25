@@ -36,26 +36,26 @@ body {
   text-align: center;
 }
 .navleft p {
-  display: flex;
+  display: inline;
   font-size: 16px;
-  gap: 5px;
 }
 .colorChange {
   color: #6b12bf;
+  font-size: 16px;
 }
 .navright {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 20px;
+  gap: 40px;
 }
 .navright ul {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 30px;
+  gap: 65px;
 }
 .navright ul li {
   list-style-type: none;
@@ -63,9 +63,10 @@ body {
 
 .contactbtn {
   background-color: #771bbe;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: 15px;
+  font-weight: 800;
 }
 
 .homecenter {
@@ -90,9 +91,10 @@ body {
 }
 .homecenter button {
   background-color: #771bc8;
-  padding: 20px;
+  padding: 20px 30px;
   border: none;
-  border-radius: 20px;
+  font-weight: 800;
+  border-radius: 50px;
 }
 .homebottom {
   display: flex;
@@ -103,15 +105,15 @@ body {
 }
 .homebutton1 {
   background: none;
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 15px 30px;
+  border-radius: 50px;
   border: 2px solid #54039d;
 }
 .homebutton2 {
   background-color: #360a60;
   border-radius: 100%;
   border: none;
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
