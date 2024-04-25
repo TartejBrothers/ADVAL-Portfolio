@@ -11,7 +11,7 @@ export default function home() {
           <div className="navleft">
             <img src={logo} alt="logo" />
             <p>
-              <p className="colorChange">ADVAL</p>SOLUTIONS
+              <p className="colorChange">ADVAL</p> STUDIOS
             </p>
           </div>
           <div className="navright">
@@ -31,7 +31,8 @@ export default function home() {
         <div className="homecenter">
           <h1>
             Building <h1 className="colorYellow">Your Brand</h1> with You, For
-            You Let's Navigate Together.
+            You <br />
+            Let's Navigate Together.
           </h1>
           <p>
             Our Agency is a one stop solution to all of your Digital problems.
