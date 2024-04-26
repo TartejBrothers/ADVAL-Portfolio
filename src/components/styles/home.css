@@ -1,0 +1,112 @@
+
+.homemain {
+  padding: 20px;
+  background-image: url("../assests/homebg.png");
+  height: 100vh;
+  background-position: center center;
+  background-color: #1b052d;
+  overflow: hidden;
+}
+.navbar {
+  background-color: #1f0238;
+  border: solid 1px #7015c9;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navleft {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  font-weight: 800;
+  text-align: center;
+}
+.navleft p {
+  display: inline;
+  font-size: 16px;
+}
+.colorChange {
+  color: #6b12bf;
+  font-size: 16px;
+}
+.navright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+}
+.navright ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+}
+.navright ul li {
+  list-style-type: none;
+}
+
+.contactbtn {
+  background-color: #771bbe;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  font-weight: 800;
+}
+
+.homecenter {
+  height: calc(90vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homecenter h1 {
+  display: inline;
+  font-size: 40px;
+}
+.colorYellow {
+  color: #ffc100;
+}
+.homecenter p {
+  width: 60%;
+  font-size: 20px;
+  margin: 30px 0;
+}
+.homecenter button {
+  background-color: #771bc8;
+  padding: 20px 30px;
+  border: none;
+  font-weight: 800;
+  border-radius: 50px;
+}
+.homebottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+  align-items: center;
+}
+.homebutton1 {
+  background: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: 2px solid #54039d;
+}
+.homebutton2 {
+  background-color: #360a60;
+  border-radius: 100%;
+  border: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homebutton2 img {
+  height: 15px;
+  width: 15px;
+}

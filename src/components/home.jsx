@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles/home.css";
 import "./styles/style.css";
 import logo from "./assests/icons/logo.png";
 import arrow from "./assests/icons/arrow.png";
