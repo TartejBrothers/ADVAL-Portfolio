@@ -33,7 +33,7 @@ export default function home() {
           <h1>
             Building <h1 className="colorYellow">Your Brand</h1> with You, For
             You <br />
-            Let's Navigate Together.
+            Let's Navigate <u>Together</u>.
           </h1>
           <p>
             Our Agency is a one stop solution to all of your Digital problems.
