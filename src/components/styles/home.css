@@ -1,4 +1,3 @@
-
 .homemain {
   padding: 20px;
   background-image: url("../assests/homebg.png");
@@ -47,8 +46,14 @@
 }
 .navright ul li {
   list-style-type: none;
+  transition: all 0.8s ease;
+  cursor: pointer;
 }
-
+.navright ul li:hover {
+  scale: 1.2;
+  font-weight: 800;
+  transition: all 0.8s ease;
+}
 .contactbtn {
   background-color: #771bbe;
   padding: 15px 20px;
