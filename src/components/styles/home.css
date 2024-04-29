@@ -71,8 +71,12 @@
 }
 
 .homecenter h1 {
+  font-weight: 800;
   display: inline;
-  font-size: 40px;
+  font-size: 48px;
+}
+.homecenter h1 u {
+  text-decoration-color: #ffc100;
 }
 .colorYellow {
   color: #ffc100;
