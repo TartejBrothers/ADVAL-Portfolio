@@ -21,6 +21,7 @@
   flex-direction: row;
   font-weight: 800;
   text-align: center;
+  gap: 10px;
 }
 .navleft p {
   display: inline;
