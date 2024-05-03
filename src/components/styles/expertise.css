@@ -1,0 +1,17 @@
+.expertisebody {
+  background-color: #080807;
+  width: 100vw;
+  padding-top: 30px;
+}
+.expertisebody h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+}
+.expertisebody hr {
+  width: 80%;
+  margin: 0 auto;
+  opacity: 0.5;
+}
