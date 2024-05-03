@@ -64,7 +64,7 @@
 }
 
 .homecenter {
-  height: calc(90vh - 100px);
+  height: calc(90vh - 150px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,7 +74,7 @@
 .homecenter h1 {
   font-weight: 800;
   display: inline;
-  font-size: 48px;
+  font-size: 40px;
 }
 .homecenter h1 u {
   text-decoration-color: #ffc100;

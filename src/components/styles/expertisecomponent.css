@@ -1,0 +1,71 @@
+.expertisecomponent {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+.leftexpertisebody {
+  width: 100%;
+  gap: 40px;
+  padding-bottom: 40px;
+  display: flex;
+}
+.leftexpertise,
+.rightexpertise {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.leftexpertiseheader {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.leftexpertiseheader h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #bfbfb1;
+  font-family: "Inter", sans-serif;
+}
+.leftexpertiseheader img {
+  width: 15px;
+  height: 15px;
+}
+
+.rightexpertise {
+  position: relative;
+}
+.rightexpertisetop {
+  z-index: 10;
+  font-size: 24px;
+}
+.rightexpertisetop ul li {
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: #bfbfb1;
+}
+.rightexpertisebottom {
+  position: absolute;
+  top: -20px;
+  left: calc(80% - 150px);
+  width: 100%;
+  opacity: 0.3;
+
+  font-weight: 800;
+}
+.rightexpertisebottom h5 {
+  font-size: 150px;
+  color: #771bc8;
+}
+
+.leftexpertise p {
+  font-size: 12px;
+  width: 60%;
+  font-family: "Inter", sans-serif;
+  margin-top: 10px;
+  color: #a29e9a;
+  line-height: 1.5;
+}
