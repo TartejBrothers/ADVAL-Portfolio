@@ -5,13 +5,14 @@
 }
 .expertisebody h1 {
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
+  color: #bfbfb1;
   margin-bottom: 10px;
   font-family: "Inter", sans-serif;
 }
 .expertisebody hr {
   width: 80%;
   margin: 0 auto;
-  opacity: 0.5;
+  opacity: 0.2;
 }

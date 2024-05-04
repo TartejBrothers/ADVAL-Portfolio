@@ -50,15 +50,14 @@
 .rightexpertisebottom {
   position: absolute;
   top: -20px;
-  left: calc(80% - 150px);
+  left: calc(80% - 180px);
   width: 100%;
-  opacity: 0.3;
-
   font-weight: 800;
 }
 .rightexpertisebottom h5 {
   font-size: 150px;
   color: #771bc8;
+  opacity: 0.3;
 }
 
 .leftexpertise p {
