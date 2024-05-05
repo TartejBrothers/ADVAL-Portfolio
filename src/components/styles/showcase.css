@@ -1,0 +1,83 @@
+.showcase {
+  background-image: url(../assests/Lines.png);
+  background-color: #111;
+}
+.showcase h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #bfbfb1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.showcasemain {
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  justify-content: center;
+}
+
+.showcasecenter,
+.showcaseright {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.showcaseright {
+  justify-self: center;
+  align-items: center;
+}
+.showcaseright img {
+  max-width: 300px;
+}
+
+.showcasecenter {
+  text-align: left;
+  margin-left: 20px;
+  justify-content: flex-start;
+}
+.showcasecentercontent {
+  width: 70%;
+}
+.showcasecenter h1 {
+  font-size: 36px;
+  margin-top: 0px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.showcaseleft {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  overflow: visible;
+  position: relative;
+}
+.showcaseline {
+  width: 2px;
+  height: calc(100% - 14px);
+  background-color: #ffffff;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+}
+.showcasecircle {
+  position: absolute;
+  bottom: 8px;
+  left: -4px;
+}
+.showcasecenterspeaker {
+  margin-top: 20px;
+}
+
+.showcasecentercontent {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  font-size: 20px;
+  color: #a29e9a;
+}
+.yellowshowcase {
+  color: #e1ab20;
+  display: inline;
+}
