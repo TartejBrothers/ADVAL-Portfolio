@@ -1,14 +1,9 @@
 .showcase {
   background-image: url(../assests/Lines.png);
   background-color: #111;
+  padding-top: 40px;
 }
-.showcase h1 {
-  font-size: 40px;
-  font-weight: 600;
-  color: #bfbfb1;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+
 .showcasemain {
   width: 100%;
   margin: 100px auto;
