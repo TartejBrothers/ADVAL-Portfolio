@@ -1,0 +1,57 @@
+.contactmain {
+  background: rgb(35, 5, 64);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(35, 5, 64, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(35, 5, 64, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(35, 5, 64, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#230540",endColorstr="#000000",GradientType=1);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contactmain h1 {
+  font-size: 80px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.yellowcolor {
+  display: inline;
+  color: #ffc100;
+}
+.contactmain p {
+  width: 55%;
+}
+.contactbuttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.booknow {
+  background-color: #771bc8;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+.bookservices {
+  background: none;
+  border: 2px solid #771bc8;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  border-radius: 50px;
+}
