@@ -5,7 +5,7 @@ import ShowcaseComponentReverse from "./showcasecomponentreverse";
 export default function showcase() {
   return (
     <div className="showcase">
-      <h1>Our Projects</h1>
+      <h1 className="commonheader">Our Projects</h1>
       <ShowcaseComponent
         heading="ADLIFE NGO"
         content="This website provides a platform for NGO to Changing Lives by providing them a platform to build trust, showcase their work, collect donations and gather people who wan to make a difference in society.

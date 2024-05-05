@@ -1,0 +1,12 @@
+.designsbody {
+  background-color: #111110;
+  padding: 50px 0px;
+}
+.designsmain {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-inline: 20px;
+  overflow-y: scroll;
+}
