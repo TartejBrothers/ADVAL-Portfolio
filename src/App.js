@@ -4,6 +4,7 @@ import Expertise from "./components/expertise";
 import Showcase from "./components/showcase";
 import Designs from "./components/designs";
 import Testimonial from "./components/testimonial";
+import Contact from "./components/contact";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <Showcase />
       <Designs />
       <Testimonial />
+      <Contact />
     </div>
   );
 }
