@@ -87,6 +87,8 @@
   gap: 40px;
   cursor: grab;
   scroll-snap-type: x;
+  overflow-y: visible;
+  padding-top: 80px;
   scroll-padding-inline: 24px;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -104,7 +106,8 @@
   padding: 0px 30px 30px 30px;
   scroll-snap-align: start;
   border-radius: 30px;
-  overflow: hidden;
+  overflow: visible;
+
   background-color: #2d2336;
   box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.1);
   border: 2px solid #ffffff;
@@ -116,7 +119,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+
+  padding: 50px 10px 10px 10px;
+  overflow: visible;
+  position: relative;
   border-radius: 20px;
 }
 
@@ -124,6 +130,7 @@
   border-radius: 100%;
   margin-bottom: 20px;
   width: 100px;
+  position: absolute;
   top: -60px;
 }
 
