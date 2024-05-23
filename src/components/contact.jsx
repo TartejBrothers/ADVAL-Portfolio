@@ -20,7 +20,7 @@ export default function contact() {
           <button className="bookservices">Check Out Services</button>
         </div>
       </div>
-      <img src={footertop} className="footertop" alt="Footer Design" />
+      <img src={footertop} className="footertopimg" alt="Footer Design" />
     </div>
   );
 }
