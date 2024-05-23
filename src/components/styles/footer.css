@@ -90,6 +90,7 @@
   width: 30px;
 }
 .footer {
+  padding: 20px;
   background-color: #390e62;
 }
 .footerworkrightbody form {
@@ -98,6 +99,10 @@
 }
 .footerworkrightbody input {
   background: none;
+}
+.footerworkrightbody input:focus {
+  border: none;
+  outline: none;
 }
 .footerworkrightbody form button {
   background-color: #771bc8;
