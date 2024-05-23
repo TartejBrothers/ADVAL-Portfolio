@@ -1,4 +1,4 @@
-.contactmain {
+.contactmainwhole {
   background: rgb(35, 5, 64);
   background: -moz-linear-gradient(
     0deg,
@@ -16,11 +16,13 @@
     rgba(0, 0, 0, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#230540",endColorstr="#000000",GradientType=1);
-  height: 100vh;
+}
+.contactmain {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 .contactmain h1 {
   font-size: 80px;
