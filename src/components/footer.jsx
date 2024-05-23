@@ -1,6 +1,9 @@
 import React from "react";
 import "./styles/footer.css";
 import logo from "./assests/icons/logo.png";
+import arrowsubmit from "./assests/icons/arrowsubmit.svg";
+import phone from "./assests/icons/phone.png";
+import email from "./assests/icons/email.png";
 export default function footer() {
   return (
     <div>
@@ -42,31 +45,30 @@ export default function footer() {
             </ul>
           </div>
           <div className="footerworkrightbody">
-            <div className="footerworkrightheader">WHERE WE WORK</div>
+            <div className="footerworkrightheader">CONTACT US</div>
             <hr className="footerworkrightsplitter" />
             <ul>
               <li>
-                <img src="images/icons/phone.png" alt="phone" />
-                +91 9827199614
+                <img src={phone} alt="phone" />
+                +91 9952613793
               </li>
 
               <li>
-                <img src="images/icons/mail.png" alt="mail" id="mailicon" />
-                perfectsignninfra@gmail.com
+                <img src={email} alt="mail" id="mailicon" />
+                Info@adval.com
               </li>
             </ul>
           </div>
           <div className="footerworkrightbody">
-            <div className="footerworkrightheader">FOLLOW US</div>
+            <div className="footerworkrightheader">OUR PRICING?</div>
             <hr className="footerworkrightsplitter" />
-            <p>
-              For more Regular updates and event announcements. Make sure to
-              follow us:
-            </p>
-            <div className="socials">
-              <img src="images/icons/facebookfooter.svg" alt="facebook" />
-              <img src="images/icons/linkedinfooter.svg" alt="linkedin" />
-            </div>
+            <form>
+              <input type="email" placeholder="Enter address" />
+              <button type="submit">
+                <img src={arrowsubmit} alt="Submit Arrow" />
+              </button>
+            </form>
+            <hr className="formline" />
           </div>
         </div>
       </div>
