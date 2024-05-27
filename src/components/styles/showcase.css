@@ -34,6 +34,9 @@
 .showcasecentercontent {
   width: 70%;
 }
+.showcaseright {
+  justify-content: center;
+}
 .showcasecenter h1 {
   font-size: 36px;
   margin-top: 0px;
