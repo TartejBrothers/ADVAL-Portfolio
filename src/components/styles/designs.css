@@ -3,13 +3,62 @@
   padding: 50px 0px;
 }
 .designsmain {
-  height: 100vh;
   display: flex;
   justify-content: center;
   gap: 40px;
   padding-inline: 40px;
-  overflow-y: scroll;
+  overflow: hidden;
 }
+
+.designleft,
+.designcenter,
+.designright {
+  width: 30%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.designleft-scroll,
+.designcenter-scroll,
+.designright-scroll {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  animation-timing-function: linear;
+  white-space: nowrap;
+}
+
+.designleft-scroll {
+  animation: scroll-up 15s linear infinite;
+}
+
+.designright-scroll {
+  animation: scroll-up 15s linear infinite;
+}
+.designcenter-scroll {
+  animation: scroll-down 15s linear infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(-100%));
+  }
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 .designleft img,
 .designcenter img,
 .designright img {
@@ -22,7 +71,7 @@
   height: 100vh;
   justify-content: center;
   gap: 40px;
-  padding-inline: 40px;
+  padding-inline: 10px;
   overflow-y: scroll;
 }
 
@@ -32,5 +81,15 @@
   }
   .designsmobile {
     display: flex;
+  }
+  .designright,
+  .designleft {
+    width: 45%;
+  }
+  .designright-scroll {
+    animation: scroll-down 10s linear infinite;
+  }
+  .designleft-scroll {
+    animation: scroll-up 10s linear infinite;
   }
 }
