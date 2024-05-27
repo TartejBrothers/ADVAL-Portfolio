@@ -76,3 +76,34 @@
   color: #e1ab20;
   display: inline;
 }
+.showcasemobile {
+  width: 100vw;
+}
+.showcasemobile .showcasemain {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.showcasemobile .showcasecenter {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.showcasemobile .showcasecenter,
+.showcasemobile .showcaseright {
+  width: 100%;
+}
+.showcasemobile .showcasecentercontent {
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .showcasedesktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .showcasemobile {
+    display: none;
+  }
+}
