@@ -12,6 +12,7 @@
   border-radius: 20px;
   padding: 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .navleft {
@@ -25,12 +26,12 @@
 }
 .navleft p {
   display: inline;
-  font-size: 16px;
 }
 .colorChange {
   color: #6b12bf;
-  font-size: 16px;
+  font-size: 17px;
 }
+
 .navright {
   display: flex;
   align-items: center;
@@ -54,6 +55,9 @@
   scale: 1.2;
   font-weight: 800;
   transition: all 0.8s ease;
+}
+.navrightmobile {
+  display: none;
 }
 .contactbtn {
   background-color: #771bbe;
@@ -119,4 +123,27 @@
 .homebutton2 img {
   height: 15px;
   width: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .homemain {
+    background-image: none;
+  }
+  .navright {
+    display: none;
+  }
+  .homecenter h1 {
+    font-size: 24px;
+  }
+  .homecenter p {
+    width: 80%;
+    font-size: 16px;
+  }
+  .navrightmobile {
+    display: block;
+  }
+  .navbar {
+    border: none;
+    background-color: transparent;
+  }
 }

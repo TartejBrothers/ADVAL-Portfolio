@@ -3,7 +3,7 @@ import "./styles/home.css";
 import "./styles/style.css";
 import logo from "./assests/icons/logo.png";
 import arrow from "./assests/icons/arrow.png";
-
+import griplines from "./assests/icons/griplines.svg";
 export default function home() {
   return (
     <div>
@@ -26,6 +26,9 @@ export default function home() {
                 <button className="contactbtn">Contact</button>
               </li>
             </ul>
+          </div>
+          <div className="navrightmobile">
+            <img src={griplines} alt="Open Menu" />
           </div>
         </div>
 

@@ -7,14 +7,14 @@ const showcasecomponent = ({ heading, content, speaker, post }) => {
   return (
     <div className="showcasemain">
       <div className="showcaseleft">
-        <img src={rectangle} />
+        <img src={rectangle} alt="Rectangle" />
         <div className="showcaseline"></div>
-        <img src={circle} className="showcasecircle" />
+        <img src={circle} className="showcasecircle" alt="Circle" />
       </div>
       <div className="showcasecenter">
         <h1>{heading}</h1>
         <div className="showcaseright">
-          <img src={project} />
+          <img src={project} alt="Project" />
         </div>
         <div className="showcasecentercontent">
           <p>{content}</p>

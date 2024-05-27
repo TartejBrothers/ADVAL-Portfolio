@@ -69,3 +69,21 @@
   color: #a29e9a;
   line-height: 1.5;
 }
+@media screen and (max-width: 1000px) {
+  .rightexpertisebottom h5 {
+    font-size: 50px;
+    margin-left: 80px;
+    margin-top: 100px;
+  }
+  .leftexpertise p {
+    width: 100%;
+  }
+  .leftexpertiseheader h3 {
+    font-size: 20px;
+  }
+  .rightexpertisetop ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #bfbfb1;
+  }
+}
