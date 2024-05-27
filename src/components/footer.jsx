@@ -4,6 +4,9 @@ import logo from "./assests/icons/logo.png";
 import arrowsubmit from "./assests/icons/arrowsubmit.svg";
 import phone from "./assests/icons/phone.png";
 import email from "./assests/icons/email.png";
+import twitter from "./assests/icons/twitter.svg";
+import linkedin from "./assests/icons/linkedin.svg";
+import instagram from "./assests/icons/instagram.svg";
 export default function footer() {
   return (
     <div>
@@ -27,13 +30,13 @@ export default function footer() {
             <div className="footerworkrightheader">WHO WE ARE</div>
             <hr className="footerworkrightsplitter" />
             <ul>
-              <a href="#">
+              <a href="#home">
                 <li>{">"} Home</li>
               </a>
-              <a href="#">
+              <a href="#services">
                 <li>{">"} Services</li>
               </a>
-              <a href="#">
+              <a href="#portfolio">
                 <li>{">"} Portfolio</li>
               </a>
               <a href="#work">
@@ -70,6 +73,19 @@ export default function footer() {
             </form>
             <hr className="formline" />
           </div>
+        </div>
+        <div className="footerrightmost">
+          <ul>
+            <li>
+              <img src={twitter} alt="twitter" />
+            </li>
+            <li>
+              <img src={linkedin} alt="LinkedIn" />
+            </li>
+            <li>
+              <img src={instagram} alt="Instagram" />
+            </li>
+          </ul>
         </div>
       </div>
       <div className="footer">

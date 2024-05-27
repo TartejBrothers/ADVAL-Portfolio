@@ -61,3 +61,24 @@
 .footertopimg {
   margin-bottom: -5px;
 }
+
+@media screen and (max-width: 1000px) {
+  .contactmain h1 {
+    font-size: 40px;
+  }
+  .contactmain p {
+    width: 80%;
+  }
+  .contactbuttons {
+    flex-direction: column;
+  }
+  .booknow {
+    width: 100%;
+  }
+  .bookservices {
+    width: 100%;
+  }
+  .footertopimg {
+    margin-bottom: 0;
+  }
+}
