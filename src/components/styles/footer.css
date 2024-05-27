@@ -15,9 +15,9 @@
   background: linear-gradient(180deg, #000 0%, #1d1e20 100%);
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  padding: 40px 20px 40px 20px;
+  padding: 40px 0px 40px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .footerworklefthead {
   display: flex;
@@ -113,6 +113,36 @@
 .formline {
   width: 100%;
   border: 1px solid #666;
+}
+.footerrightmost {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+.footerrightmost ul {
+  padding: 20px 10px 0px 10px;
+  padding: 20px 10px 0px 10px;
+  background-color: #350e59;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.footerrightmost ul li {
+  background-color: #8719e8;
+  padding: 6px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerrightmost ul li img {
+  width: 20px;
+  height: 20px;
 }
 @media screen and (max-width: 1000px) {
   .footerwork {
