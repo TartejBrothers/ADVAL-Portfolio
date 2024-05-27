@@ -66,12 +66,14 @@ export default function footer() {
             <div className="footerworkrightheader">OUR PRICING?</div>
             <hr className="footerworkrightsplitter" />
             <form>
-              <input type="email" placeholder="Enter address" />
-              <button type="submit">
-                <img src={arrowsubmit} alt="Submit Arrow" />
-              </button>
+              <div className="formmain">
+                <input type="email" placeholder="Enter address" />
+                <button type="submit">
+                  <img src={arrowsubmit} alt="Submit Arrow" />
+                </button>
+              </div>
+              <hr className="formline" />
             </form>
-            <hr className="formline" />
           </div>
         </div>
         <div className="footerrightmost">
