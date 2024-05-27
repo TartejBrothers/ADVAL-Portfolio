@@ -37,11 +37,12 @@
 .footerworkleftside h1 {
   font-size: 20px;
   text-align: center;
-  color: #fc17a0;
+  color: #771bc8;
   margin: 10px 0 10px 0;
 }
 .footerworkright {
   display: flex;
+  gap: 50px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -55,13 +56,13 @@
   font-size: 15px;
 }
 .footerworkrightheader {
-  color: #fc17a0;
+  color: #771bc8;
   font-size: 14px;
   text-align: left;
 }
 .footerworkrightsplitter {
   width: 50%;
-  border: 1px solid #fc17a0;
+  border: 1px solid #771bc8;
   margin: 10px 0 20px 0;
 }
 .footerwork ul {
@@ -93,7 +94,10 @@
   padding: 20px;
   background-color: #390e62;
 }
-.footerworkrightbody form {
+form {
+  width: fit-content;
+}
+.formmain {
   display: flex;
   flex-direction: row;
 }
@@ -122,7 +126,6 @@
   margin-top: 20px;
 }
 .footerrightmost ul {
-  padding: 20px 10px 0px 10px;
   padding: 20px 10px 0px 10px;
   background-color: #350e59;
   display: flex;
@@ -159,5 +162,14 @@
   }
   .socials {
     justify-content: center;
+  }
+  .footerrightmost {
+    justify-content: center;
+  }
+  .footerrightmost ul {
+    padding: 20px 20px 5px 20px;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 20px;
   }
 }
