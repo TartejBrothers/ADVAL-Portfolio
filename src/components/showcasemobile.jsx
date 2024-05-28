@@ -1,9 +1,8 @@
 import React from "react";
 import rectangle from "./assests/icons/rectangle.png";
 import circle from "./assests/icons/circle.png";
-import project from "./assests/showcase_pfp.png";
 
-const showcasecomponent = ({ heading, content, speaker, post }) => {
+const showcasecomponent = ({ heading, content, speaker, post, image }) => {
   return (
     <div className="showcasemain">
       <div className="showcaseleft">
@@ -14,7 +13,7 @@ const showcasecomponent = ({ heading, content, speaker, post }) => {
       <div className="showcasecenter">
         <h1>{heading}</h1>
         <div className="showcaseright">
-          <img src={project} alt="Project" />
+          <img src={image} alt="Project" />
         </div>
         <div className="showcasecentercontent">
           <p>{content}</p>
