@@ -1,10 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/home.css";
 import "./styles/style.css";
 import logo from "./assests/icons/logo.png";
 import arrow from "./assests/icons/arrow.png";
 import griplines from "./assests/icons/griplines.svg";
-export default function home() {
+
+export default function Home() {
+  useEffect(() => {
+    const listItems = document.querySelectorAll(".navright ul li");
+
+    listItems.forEach((item) => {
+      const handleMouseEnter = () => {
+        item.style.animation = "none";
+        setTimeout(() => {
+          item.style.animation = "slideUp 1s forwards";
+        }, 0);
+      };
+
+      item.addEventListener("mouseenter", handleMouseEnter);
+
+      return () => {
+        item.removeEventListener("mouseenter", handleMouseEnter);
+      };
+    });
+  }, []);
+
   return (
     <div>
       <div className="homemain">
@@ -12,7 +32,7 @@ export default function home() {
           <div className="navleft">
             <img src={logo} alt="logo" />
             <p>
-              <p className="colorChange">ADVAL</p> STUDIOS
+              <span className="colorChange">ADVAL</span> STUDIOS
             </p>
           </div>
           <div className="navright">
@@ -34,8 +54,8 @@ export default function home() {
 
         <div className="homecenter">
           <h1>
-            Building <h1 className="colorYellow">Your Brand</h1> with You, For
-            You <br />
+            Building <span className="colorYellow">Your Brand</span> with You,
+            For You <br />
             Let's Navigate <u>Together</u>.
           </h1>
           <p>

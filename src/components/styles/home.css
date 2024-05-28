@@ -44,18 +44,42 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 65px;
+  gap: 40px;
 }
 .navright ul li {
   list-style-type: none;
-  transition: all 0.8s ease;
   cursor: pointer;
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
 }
+
+.navright ul li:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .navright ul li:hover {
-  scale: 1.2;
-  font-weight: 800;
-  transition: all 0.8s ease;
+  color: #771bc9;
+  animation: slideUp 0.8s forwards;
 }
+
 .navrightmobile {
   display: none;
 }
