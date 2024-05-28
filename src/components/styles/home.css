@@ -1,6 +1,6 @@
 .homemain {
   padding: 20px;
-  background-image: url("../assests/homebg.png");
+  /* background-image: url("../assests/homebg.png"); */
   height: 100vh;
   background-position: center center;
   background-color: #1b052d;
@@ -90,7 +90,10 @@
   border-radius: 15px;
   font-weight: 800;
 }
-
+.contactbtn:hover {
+  background-color: #3a0a66;
+  color: #ffff;
+}
 .homecenter {
   height: calc(90vh - 150px);
   display: flex;
@@ -100,7 +103,7 @@
 }
 
 .homecenter h1 {
-  font-weight: 800;
+  font-weight: 600;
   display: inline;
   font-size: 40px;
 }
@@ -109,6 +112,7 @@
 }
 .colorYellow {
   color: #ffc100;
+  font-weight: 800;
 }
 .homecenter p {
   width: 60%;
@@ -119,8 +123,14 @@
   background-color: #771bc8;
   padding: 20px 30px;
   border: none;
-  font-weight: 800;
+  font-weight: 400;
+  transition: all 0.8s ease-in-out;
   border-radius: 50px;
+}
+.homecenter button:hover {
+  background-color: #3a0a66;
+  color: #ffff;
+  font-weight: 800;
 }
 .homebottom {
   display: flex;
@@ -133,6 +143,7 @@
   background: none;
   padding: 15px 30px;
   border-radius: 50px;
+  transition: all 0.8s ease-in-out;
   border: 2px solid #54039d;
 }
 .homebutton2 {
@@ -141,8 +152,17 @@
   border: none;
   padding: 20px;
   display: flex;
+  transition: all 0.8s ease-in-out;
   justify-content: center;
   align-items: center;
+}
+.homebutton1:hover {
+  background-color: #3a0a66;
+  color: #ffff;
+}
+.homebutton2:hover {
+  background-color: #771bc9;
+  color: #ffff;
 }
 .homebutton2 img {
   height: 15px;
