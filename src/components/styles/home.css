@@ -1,6 +1,6 @@
 .homemain {
   padding: 20px;
-  /* background-image: url("../assests/homebg.png"); */
+
   height: 100vh;
   background-position: center center;
   background-color: #1b052d;
@@ -107,7 +107,7 @@
 
 .homecenter h1 {
   font-weight: 600;
-  display: inline;
+
   font-size: 40px;
 }
 .homecenter h1 u {
@@ -122,7 +122,7 @@
   font-size: 20px;
   margin: 30px 0;
 }
-.homecenter button {
+.homecenterbutton {
   background-color: #771bc8;
   padding: 20px 30px;
   border: none;
@@ -171,6 +171,12 @@
   height: 15px;
   width: 15px;
 }
+.homebottommobile {
+  display: none;
+}
+.mobileonly {
+  display: none;
+}
 
 @media screen and (max-width: 1000px) {
   .homemain {
@@ -192,5 +198,34 @@
   .navbar {
     border: none;
     background-color: transparent;
+  }
+  .homebottom {
+    display: none;
+  }
+  .homebottommobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .homebutton1 {
+    width: 210px;
+    padding: 20px 30px;
+    height: 70px;
+    margin-top: 20px;
+  }
+
+  .homecenterbutton {
+    width: 210px;
+    height: 70px;
+  }
+  .mobileonly {
+    display: inline;
+  }
+  .desktoponly {
+    display: none;
+  }
+  .homecenter {
+    height: 95vh;
   }
 }

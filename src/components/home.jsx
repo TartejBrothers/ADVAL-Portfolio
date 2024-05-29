@@ -53,9 +53,14 @@ export default function Home() {
         </div>
 
         <div className="homecenter">
-          <h1>
+          <h1 className="desktoponly">
             Building <span className="colorYellow">Your Brand</span> with You,
             For You <br />
+            Let's Navigate <u>Together</u>.
+          </h1>
+          <h1 className="mobileonly">
+            Building <span className="colorYellow">Your Brand</span> <br />
+            with You, For You <br />
             Let's Navigate <u>Together</u>.
           </h1>
           <p>
@@ -63,7 +68,10 @@ export default function Home() {
             More than an agency, we are your partner in success, every step of
             the way anytime, anywhere
           </p>
-          <button>Free Consultation</button>
+          <button className="homecenterbutton">Free Consultation</button>
+          <div className="homebottommobile">
+            <button className="homebutton1">Our Portfolio</button>
+          </div>
         </div>
         <div className="homebottom">
           <button className="homebutton1">Our Portfolio</button>
