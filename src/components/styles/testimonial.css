@@ -158,4 +158,11 @@
   .card-wrapper {
     grid-auto-columns: calc(100% - 20px);
   }
+  .testimonial p {
+    width: 95%;
+    font-size: 14px;
+  }
+  .card-item {
+    padding: 0px;
+  }
 }
