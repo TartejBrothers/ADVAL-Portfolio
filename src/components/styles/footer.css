@@ -17,11 +17,12 @@
   font-family: "Open Sans", sans-serif;
   padding: 40px 0px 40px 20px;
   display: flex;
+
   justify-content: space-between;
 }
 .footerworklefthead {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   font-size: 10px;
   color: #fc17a0;
@@ -32,7 +33,7 @@
   text-align: left;
 }
 .footerworklefthead img {
-  height: 30px;
+  height: 20px;
 }
 .footerworkleftside h1 {
   font-size: 20px;
@@ -42,7 +43,8 @@
 }
 .footerworkright {
   display: flex;
-  gap: 50px;
+  gap: 20px;
+  width: 60%;
   justify-content: center;
   align-items: flex-start;
 }
