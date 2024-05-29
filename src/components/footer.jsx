@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/footer.css";
 import logo from "./assests/icons/logo.png";
 import arrowsubmit from "./assests/icons/arrowsubmit.svg";
@@ -7,7 +7,28 @@ import email from "./assests/icons/email.png";
 import twitter from "./assests/icons/twitter.svg";
 import linkedin from "./assests/icons/linkedin.svg";
 import instagram from "./assests/icons/instagram.svg";
-export default function footer() {
+
+export default function Footer() {
+  useEffect(() => {
+    const listItems = document.querySelectorAll(".footerwork ul li");
+
+    const handleMouseEnter = (item) => {
+      item.style.animation = "none";
+      setTimeout(() => {
+        item.style.animation = "slideUp 1s forwards";
+      }, 0);
+    };
+
+    listItems.forEach((item) => {
+      const enterHandler = () => handleMouseEnter(item);
+      item.addEventListener("mouseenter", enterHandler);
+
+      return () => {
+        item.removeEventListener("mouseenter", enterHandler);
+      };
+    });
+  }, []);
+
   return (
     <div>
       <div className="footerwork" id="contact">

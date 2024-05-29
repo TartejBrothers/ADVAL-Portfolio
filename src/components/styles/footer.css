@@ -43,9 +43,9 @@
 }
 .footerworkright {
   display: flex;
-  gap: 20px;
-  width: 60%;
-  justify-content: center;
+
+  width: 70%;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 .footerworkleft {
@@ -79,6 +79,9 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+}
+.footerwork ul li:hover {
+  animation: slideUp 0.8s forwards;
 }
 .footerwork ul li img {
   width: 18px;
