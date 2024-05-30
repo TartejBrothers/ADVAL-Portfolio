@@ -78,10 +78,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: all 0.5s ease;
   margin-bottom: 15px;
 }
 .footerwork ul li:hover {
-  animation: slideUp 0.8s forwards;
+  color: #771bc9;
 }
 .footerwork ul li img {
   width: 18px;
