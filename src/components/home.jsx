@@ -38,7 +38,9 @@ export default function Home() {
               <li>Reviews</li>
               <li>About</li>
               <li>
-                <button className="contactbtn">Contact</button>
+                <a href="https://calendly.com/advalstudios" target="blank">
+                  <button className="contactbtn">Contact</button>
+                </a>
               </li>
             </ul>
           </div>
@@ -83,7 +85,9 @@ export default function Home() {
             </li>
             <li>
               <img src={info} alt="Navigation Items" />
-              About
+              <a href="https://calendly.com/advalstudios" target="blank">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -104,7 +108,9 @@ export default function Home() {
             More than an agency, we are your partner in success, every step of
             the way anytime, anywhere
           </p>
-          <button className="homecenterbutton">Free Consultation</button>
+          <a href="https://calendly.com/advalstudios" target="blank">
+            <button className="homecenterbutton">Free Consultation</button>
+          </a>
           <div className="homebottommobile">
             <button className="homebutton1">Our Portfolio</button>
           </div>
