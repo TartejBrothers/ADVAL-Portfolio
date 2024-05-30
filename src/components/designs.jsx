@@ -24,19 +24,6 @@ import mobileright3 from "./assests/designs/mobileright3.png";
 import mobileright4 from "./assests/designs/mobileright4.png";
 
 export default function Designs() {
-  // useEffect(() => {
-  //   const setScrollHeight = (selector, variable) => {
-  //     const element = document.querySelector(selector);
-  //     const scrollHeight = element.scrollHeight;
-  //     const duration = scrollHeight / 100;
-  //     element.style.setProperty(variable, `${duration}s`);
-  //   };
-
-  //   setScrollHeight(".designleft-scroll", "--left-scroll-duration");
-  //   setScrollHeight(".designcenter-scroll", "--center-scroll-duration");
-  //   setScrollHeight(".designright-scroll", "--right-scroll-duration");
-  // }, []);
-
   return (
     <div className="designsbody">
       <h1 className="commonheader">Our Designs</h1>

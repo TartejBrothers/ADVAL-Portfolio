@@ -87,9 +87,9 @@
     width: 45%;
   }
   .designright-scroll {
-    animation: scroll-down 10zs linear infinite;
+    animation: scroll-down 12s linear infinite;
   }
   .designleft-scroll {
-    animation: scroll-up 10s linear infinite;
+    animation: scroll-up 12s linear infinite;
   }
 }
