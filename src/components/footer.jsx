@@ -9,33 +9,13 @@ import linkedin from "./assests/icons/linkedin.svg";
 import instagram from "./assests/icons/instagram.svg";
 
 export default function Footer() {
-  useEffect(() => {
-    const listItems = document.querySelectorAll(".footerwork ul li");
-
-    const handleMouseEnter = (item) => {
-      item.style.animation = "none";
-      setTimeout(() => {
-        item.style.animation = "slideUp 1s forwards";
-      }, 0);
-    };
-
-    listItems.forEach((item) => {
-      const enterHandler = () => handleMouseEnter(item);
-      item.addEventListener("mouseenter", enterHandler);
-
-      return () => {
-        item.removeEventListener("mouseenter", enterHandler);
-      };
-    });
-  }, []);
-
   return (
     <div>
       <div className="footerwork" id="contact">
         <div className="footerworkleft">
           <div className="footerworklefthead">
             <img src={logo} alt="logo" />
-            <h1>ADVAL</h1>
+            <h1>ADVAL </h1>
             <h1 className="whitecolor">STUDIOS</h1>
           </div>
 

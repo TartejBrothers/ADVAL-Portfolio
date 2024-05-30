@@ -54,6 +54,7 @@
   cursor: pointer;
   position: relative;
   opacity: 1;
+  transition: all 0.5s ease;
   transform: translateY(0);
 }
 
@@ -67,20 +68,8 @@
   z-index: -1;
 }
 
-@keyframes slideUp {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .navright ul li:hover {
   color: #771bc9;
-  animation: slideUp 0.8s forwards;
 }
 
 .navrightmobile {
@@ -91,6 +80,7 @@
   padding: 15px 20px;
   border: none;
   border-radius: 15px;
+  transition: all 0.5s ease;
   font-weight: 800;
 }
 .contactbtn:hover {
