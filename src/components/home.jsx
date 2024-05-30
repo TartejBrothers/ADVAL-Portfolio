@@ -1,11 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "./styles/home.css";
 import "./styles/style.css";
+import "./styles/dropdown.css";
 import logo from "./assests/icons/logo.png";
 import arrow from "./assests/icons/arrow.png";
 import griplines from "./assests/icons/griplines.svg";
+import cross from "./assests/icons/cross.svg";
+import home from "./assests/icons/home.svg";
+import info from "./assests/icons/info.svg";
+import mic from "./assests/icons/mic.svg";
+import portfolionav from "./assests/icons/portfolionav.svg";
+import reviewsnav from "./assests/icons/reviewsnav.svg";
+import servicesnav from "./assests/icons/servicesrocket.svg";
 
 export default function Home() {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <div>
       <div className="homemain">
@@ -28,9 +42,50 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div className="navrightmobile">
+          <div className="navrightmobile" onClick={toggleDropdown}>
             <img src={griplines} alt="Open Menu" />
           </div>
+        </div>
+
+        <div className={dropdownVisible ? "dropdown show" : "dropdown"}>
+          <div className="navbar">
+            <div className="navleft">
+              <img src={logo} alt="logo" />
+              <p>
+                <span className="colorChange">ADVAL</span> STUDIOS
+              </p>
+            </div>
+
+            <div className="navrightmobile" onClick={toggleDropdown}>
+              <img src={cross} alt="Open Menu" />
+            </div>
+          </div>
+          <ul className="navrightmobiledrop">
+            <li>
+              <img src={home} alt="Navigation Items" />
+              Home
+            </li>
+            <li>
+              <img src={servicesnav} alt="Navigation Items" />
+              Services
+            </li>
+            <li>
+              <img src={portfolionav} alt="Navigation Items" />
+              Portfolio
+            </li>
+            <li>
+              <img src={reviewsnav} alt="Navigation Items" />
+              Reviews
+            </li>
+            <li>
+              <img src={mic} alt="Navigation Items" />
+              About
+            </li>
+            <li>
+              <img src={info} alt="Navigation Items" />
+              About
+            </li>
+          </ul>
         </div>
 
         <div className="homecenter">

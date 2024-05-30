@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./styles/designs.css";
 import left1 from "./assests/designs/left1.png";
 import left2 from "./assests/designs/left2.png";
