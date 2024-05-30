@@ -6,25 +6,6 @@ import arrow from "./assests/icons/arrow.png";
 import griplines from "./assests/icons/griplines.svg";
 
 export default function Home() {
-  useEffect(() => {
-    const listItems = document.querySelectorAll(".navright ul li");
-
-    listItems.forEach((item) => {
-      const handleMouseEnter = () => {
-        item.style.animation = "none";
-        setTimeout(() => {
-          item.style.animation = "slideUp 1s forwards";
-        }, 0);
-      };
-
-      item.addEventListener("mouseenter", handleMouseEnter);
-
-      return () => {
-        item.removeEventListener("mouseenter", handleMouseEnter);
-      };
-    });
-  }, []);
-
   return (
     <div>
       <div className="homemain">
