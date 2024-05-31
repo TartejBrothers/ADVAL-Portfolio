@@ -11,6 +11,7 @@
   display: flex;
   font-family: "Inter", sans-serif;
   justify-content: center;
+  overflow-y: hidden;
 }
 
 .showcasecenter,
@@ -31,7 +32,13 @@
 .showcasecenter {
   text-align: left;
   margin-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   justify-content: flex-start;
+}
+.showcaseleft {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .showcasecentercontent {
   width: 90%;
@@ -56,15 +63,15 @@
 }
 .showcaseline {
   width: 2px;
-  height: calc(100% - 14px);
+  height: calc(100% - 84px);
   background-color: #ffffff;
   position: absolute;
   overflow: hidden;
-  top: 0px;
+  top: 40px;
 }
 .showcasecircle {
   position: absolute;
-  bottom: 8px;
+  bottom: 37px;
   left: -4px;
 }
 .showcasecenterspeaker {
