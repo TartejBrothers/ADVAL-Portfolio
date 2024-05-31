@@ -11,9 +11,27 @@
   display: flex;
   font-family: "Inter", sans-serif;
   justify-content: center;
-  overflow-y: hidden;
+  overflow-y: clip;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0.3;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes contentfade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .showcasecenter,
 .showcaseright {
   width: 45%;
@@ -27,6 +45,14 @@
 }
 .showcaseright img {
   height: 100%;
+  animation-timeline: view();
+  animation-range-start: 300px;
+  animation-range-end: 550px;
+
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 100ms;
+  animation-timing-function: linear;
 }
 
 .showcasecenter {
@@ -42,6 +68,13 @@
 }
 .showcasecentercontent {
   width: 90%;
+  animation-timeline: view();
+  animation-range-start: 300px;
+  animation-range-end: 550px;
+
+  animation-name: contentfade;
+  animation-fill-mode: both;
+  animation-duration: 100ms;
 }
 .showcaseright {
   justify-content: center;
@@ -52,6 +85,12 @@
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 10px;
+  animation-timeline: view();
+  animation-range-start: 300px;
+  animation-range-end: 550px;
+
+  animation-name: contentfade;
+  animation-fill-mode: both;
 }
 .showcaseleft {
   display: flex;
@@ -60,19 +99,33 @@
   margin-left: 30px;
   overflow: visible;
   position: relative;
+  animation-timeline: view();
+  animation-range-start: 300px;
+  animation-range-end: 550px;
+
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 100ms;
 }
 .showcaseline {
   width: 2px;
   height: calc(100% - 84px);
   background-color: #ffffff;
   position: absolute;
-  overflow: hidden;
+  overflow: clip;
   top: 40px;
 }
 .showcasecircle {
   position: absolute;
   bottom: 37px;
   left: -4px;
+  animation-timeline: view();
+  animation-range-start: 300px;
+  animation-range-end: 550px;
+
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 100ms;
 }
 
 .showcasecenterspeaker {
@@ -111,6 +164,7 @@
 .showcasemobile .showcasecentercontent {
   width: 100%;
 }
+
 @media screen and (max-width: 1000px) {
   .showcasedesktop {
     display: none;

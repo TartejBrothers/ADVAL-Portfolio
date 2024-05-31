@@ -7,7 +7,7 @@
   justify-content: center;
   gap: 40px;
   padding-inline: 40px;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .designleft,
@@ -15,7 +15,7 @@
 .designright {
   width: 30%;
   height: 100vh;
-  overflow: hidden;
+  overflow: clip;
   position: relative;
 }
 
