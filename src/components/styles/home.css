@@ -4,7 +4,7 @@
   height: 100vh;
   background-position: center center;
   background-color: #1b052d;
-  overflow: hidden;
+  overflow: clip;
 }
 .navbar {
   background-color: #1f0238;

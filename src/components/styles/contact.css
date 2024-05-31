@@ -16,7 +16,7 @@
     rgba(0, 0, 0, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#230540",endColorstr="#000000",GradientType=1);
-  overflow-y: hidden;
+  overflow-y: clip;
 }
 .contactmain {
   display: flex;

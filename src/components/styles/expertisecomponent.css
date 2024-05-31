@@ -37,7 +37,7 @@
 
 .rightexpertise {
   position: relative;
-  overflow: hidden;
+  overflow: clip;
 }
 .rightexpertisetop {
   z-index: 10;
