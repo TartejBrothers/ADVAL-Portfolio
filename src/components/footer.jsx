@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./styles/footer.css";
 import logo from "./assests/icons/logo.png";
 import arrowsubmit from "./assests/icons/arrowsubmit.svg";
@@ -9,6 +9,13 @@ import linkedin from "./assests/icons/linkedin.svg";
 import instagram from "./assests/icons/instagram.svg";
 
 export default function Footer() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
       <div className="footerwork" id="contact">
@@ -31,21 +38,19 @@ export default function Footer() {
             <div className="footerworkrightheader">WHO WE ARE</div>
             <hr className="footerworkrightsplitter" />
             <ul>
-              <a href="#home">
-                <li>{">"} Home</li>
-              </a>
-              <a href="#services">
-                <li>{">"} Services</li>
-              </a>
-              <a href="#portfolio">
-                <li>{">"} Portfolio</li>
-              </a>
-              <a href="#work">
-                <li>{">"} Reviews</li>
-              </a>
-              <a href="#contact">
-                <li>{">"} Book a Meeting</li>
-              </a>
+              <li onClick={() => scrollToSection("home")}>{">"} Home</li>
+              <li onClick={() => scrollToSection("expertise")}>
+                {">"} Services
+              </li>
+              <li onClick={() => scrollToSection("showcase")}>
+                {">"} Portfolio
+              </li>
+              <li onClick={() => scrollToSection("testimonial")}>
+                {">"} Reviews
+              </li>
+              <li onClick={() => scrollToSection("contact")}>
+                {">"} Book a Meeting
+              </li>
             </ul>
           </div>
           <div className="footerworkrightbody">
@@ -56,7 +61,6 @@ export default function Footer() {
                 <img src={phone} alt="phone" />
                 +91 9952613793
               </li>
-
               <li>
                 <img src={email} alt="mail" id="mailicon" />
                 Info@adval.com

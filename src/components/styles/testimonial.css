@@ -81,7 +81,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 640px;
-  overflow-x: clip;
+  overflow-x: hidden;
   overflow-y: visible;
   padding: 10px;
   gap: 40px;
