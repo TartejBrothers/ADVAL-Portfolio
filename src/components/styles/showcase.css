@@ -7,7 +7,7 @@
 .showcasemain {
   width: 100%;
   margin: 100px auto;
-
+  padding-bottom: 100px;
   display: flex;
   font-family: "Inter", sans-serif;
   justify-content: center;
@@ -42,6 +42,12 @@
   justify-self: center;
   align-items: center;
   margin-inline: 20px;
+}
+.showcaseright a {
+  height: 100%;
+}
+.showcasecenter a:hover {
+  text-decoration: underline;
 }
 .showcaseright img {
   height: 100%;
