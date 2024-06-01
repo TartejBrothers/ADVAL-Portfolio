@@ -45,6 +45,7 @@ export default function showcase() {
           speaker="GaganDeep"
           post="(Senior Developer)"
           image={showcase1}
+          link="https://studentify-inc.netlify.com"
         />
         <ShowcaseMobile
           heading="ADLIFE NGO"
@@ -53,6 +54,7 @@ export default function showcase() {
           speaker="Meenakshi"
           post="(Designing Head)"
           image={showcase2}
+          link="https://adlifetrust.org.in/"
         />
         <ShowcaseMobile
           heading="INVESTO - BOT"
@@ -60,6 +62,7 @@ export default function showcase() {
           speaker="GaganDeep"
           post="(Senior Developer)"
           image={showcase3}
+          link="https://gagandeep010.github.io/Investbot.github.io/"
         />
       </div>
     </div>
