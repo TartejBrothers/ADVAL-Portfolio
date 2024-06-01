@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    transform: scale(80%);
+    border-radius: 20%;
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(100%);
+    border-radius: 0%;
+  }
+}
+
+.slide-up {
+  animation: slideUp;
+  animation-timeline: view();
+  animation-range-start: 00px;
+  animation-range-end: 100vh;
+}
+
+#testimonial {
+  z-index: 10;
+  margin-top: -10vh;
+}
+
+
