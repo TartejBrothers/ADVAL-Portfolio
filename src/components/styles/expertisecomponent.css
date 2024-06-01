@@ -70,6 +70,27 @@
   color: #a29e9a;
   line-height: 1.5;
 }
+
+@keyframes expertisecontenthide {
+  0% {
+    max-height: 1000px;
+  }
+  100% {
+    max-height: 0;
+    font-size: 0px;
+    overflow: clip;
+    padding-bottom: 0px;
+  }
+}
+.leftexpertisebody {
+  animation: expertisecontenthide;
+  animation-timeline: view();
+  animation-range-start: 60vh;
+  animation-range-end: 90vh;
+  animation-fill-mode: forwards;
+
+  animation-duration: 2s;
+}
 @media screen and (max-width: 1000px) {
   .rightexpertise {
     display: none;
