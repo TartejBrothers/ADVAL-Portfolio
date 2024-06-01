@@ -2,7 +2,14 @@ import React from "react";
 import rectangle from "./assests/icons/rectangle.png";
 import circle from "./assests/icons/circle.png";
 
-const showcasecomponent = ({ heading, content, speaker, post, image }) => {
+const showcasecomponent = ({
+  heading,
+  content,
+  speaker,
+  post,
+  link,
+  image,
+}) => {
   return (
     <div className="showcasemain">
       <div className="showcaseleft">
@@ -11,9 +18,13 @@ const showcasecomponent = ({ heading, content, speaker, post, image }) => {
         <img src={circle} className="showcasecircle" alt="Circle" />
       </div>
       <div className="showcasecenter">
-        <h1>{heading}</h1>
+        <a href={link} target="_blank" rel="noreferrer">
+          <h1>{heading}</h1>
+        </a>
         <div className="showcaseright">
-          <img src={image} alt="Project" />
+          <a href={link} target="_blank" rel="noreferrer">
+            <img src={image} alt="Project" />
+          </a>
         </div>
         <div className="showcasecentercontent">
           <p>{content}</p>

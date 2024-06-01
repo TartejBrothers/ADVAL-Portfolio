@@ -8,11 +8,14 @@ const showcasecomponentreverse = ({
   speaker,
   post,
   image,
+  link,
 }) => {
   return (
     <div className="showcasemain">
       <div className="showcaseright">
-        <img src={image} alt="Project" />
+        <a href={link} target="_blank" rel="noreferrer">
+          <img src={image} alt="Project" />
+        </a>
       </div>
       <div className="showcaseleft">
         <img src={rectangle} alt="rectangle" />
@@ -20,7 +23,9 @@ const showcasecomponentreverse = ({
         <img src={circle} className="showcasecircle" alt="Circle" />
       </div>
       <div className="showcasecenter">
-        <h1>{heading}</h1>
+        <a href={link} target="_blank" rel="noreferrer">
+          <h1>{heading}</h1>
+        </a>
         <div className="showcasecentercontent">
           <p>{content}</p>
           <p className="showcasecenterspeaker">
