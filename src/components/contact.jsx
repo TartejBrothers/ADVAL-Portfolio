@@ -2,6 +2,13 @@ import React from "react";
 import "./styles/contact.css";
 import footertop from "./assests/icons/footertop.svg";
 export default function contact() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div className="contactmainwhole">
       <div className="contactmain">
@@ -16,8 +23,15 @@ export default function contact() {
           partner in success, every step of the way - anytime, anywhere
         </p>
         <div className="contactbuttons">
-          <button className="booknow">Book Meeting Now</button>
-          <button className="bookservices">Check Out Services</button>
+          <a href="https://calendly.com/advalstudios" target="blank">
+            <button className="booknow">Book Meeting Now</button>
+          </a>
+          <button
+            className="bookservices"
+            onClick={() => scrollToSection("expertise")}
+          >
+            Check Out Services
+          </button>
         </div>
       </div>
       <img src={footertop} className="footertopimg" alt="Footer Design" />

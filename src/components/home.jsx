@@ -20,6 +20,14 @@ export default function Home() {
     setDropdownVisible(!dropdownVisible);
   };
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    setDropdownVisible(false);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div>
       <div className="homemain">
@@ -32,11 +40,11 @@ export default function Home() {
           </div>
           <div className="navright">
             <ul>
-              <li>Home</li>
-              <li>Services</li>
-              <li>Portfolio</li>
-              <li>Reviews</li>
-              <li>About</li>
+              <li onClick={() => scrollToSection("home")}>Home</li>
+              <li onClick={() => scrollToSection("expertise")}>Services</li>
+              <li onClick={() => scrollToSection("showcase")}>Portfolio</li>
+              <li onClick={() => scrollToSection("testimonial")}>Reviews</li>
+              <li onClick={() => scrollToSection("contact")}>About</li>
               <li>
                 <a href="https://calendly.com/advalstudios" target="blank">
                   <button className="contactbtn">Contact</button>
@@ -63,23 +71,23 @@ export default function Home() {
             </div>
           </div>
           <ul className="navrightmobiledrop">
-            <li>
+            <li onClick={() => scrollToSection("home")}>
               <img src={home} alt="Navigation Items" />
               Home
             </li>
-            <li>
+            <li onClick={() => scrollToSection("expertise")}>
               <img src={servicesnav} alt="Navigation Items" />
               Services
             </li>
-            <li>
+            <li onClick={() => scrollToSection("showcase")}>
               <img src={portfolionav} alt="Navigation Items" />
               Portfolio
             </li>
-            <li>
+            <li onClick={() => scrollToSection("testimonial")}>
               <img src={reviewsnav} alt="Navigation Items" />
               Reviews
             </li>
-            <li>
+            <li onClick={() => scrollToSection("contact")}>
               <img src={mic} alt="Navigation Items" />
               About
             </li>
@@ -112,12 +120,25 @@ export default function Home() {
             <button className="homecenterbutton">Free Consultation</button>
           </a>
           <div className="homebottommobile">
-            <button className="homebutton1">Our Portfolio</button>
+            <button
+              className="homebutton1"
+              onClick={() => scrollToSection("showcase")}
+            >
+              Our Portfolio
+            </button>
           </div>
         </div>
         <div className="homebottom">
-          <button className="homebutton1">Our Portfolio</button>
-          <button className="homebutton2">
+          <button
+            className="homebutton1"
+            onClick={() => scrollToSection("showcase")}
+          >
+            Our Portfolio
+          </button>
+          <button
+            className="homebutton2"
+            onClick={() => scrollToSection("showcase")}
+          >
             <img src={arrow} alt="Arrow" />
           </button>
         </div>
