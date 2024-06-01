@@ -7,6 +7,7 @@ import Designs from "./components/designs";
 import Testimonial from "./components/testimonial";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+
 function App() {
   return (
     <div className="App">
