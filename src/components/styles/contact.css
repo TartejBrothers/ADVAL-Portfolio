@@ -63,6 +63,22 @@
   margin-bottom: -5px;
 }
 
+@keyframes charactershow {
+  0% {
+    transform: scale(0%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+.contactmain {
+  animation: charactershow;
+  animation-timeline: view();
+  animation-range-start: 00px;
+  animation-range-end: 100vh;
+}
+
 @media screen and (max-width: 1000px) {
   .contactmain h1 {
     font-size: 30px;

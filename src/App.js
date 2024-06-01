@@ -1,4 +1,6 @@
-import React from "react";
+// App.js
+
+import React, { useRef, useEffect, useState } from "react";
 import "./App.css";
 import Home from "./components/home";
 import Expertise from "./components/expertise";
@@ -9,6 +11,30 @@ import Contact from "./components/contact";
 import Footer from "./components/footer";
 
 function App() {
+  const [animateTestimonial, setAnimateTestimonial] = useState(false);
+  const designsRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (designsRef.current) {
+        const designsRect = designsRef.current.getBoundingClientRect();
+        const designsTop = designsRect.top;
+
+        // Check if designs section is in view
+        if (designsTop < window.innerHeight) {
+          setAnimateTestimonial(true);
+        } else {
+          setAnimateTestimonial(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
       <div id="home" className="section">
@@ -20,10 +46,13 @@ function App() {
       <div id="showcase" className="section">
         <Showcase />
       </div>
-      <div id="designs" className="section">
+      <div id="designs" className="section" ref={designsRef}>
         <Designs />
       </div>
-      <div id="testimonial" className="section">
+      <div
+        id="testimonial"
+        className={`section ${animateTestimonial ? "slide-up" : ""}`}
+      >
         <Testimonial />
       </div>
       <div id="contact" className="section">
