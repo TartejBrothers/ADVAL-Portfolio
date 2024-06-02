@@ -24,6 +24,7 @@
     transform: scale(1);
   }
 }
+
 @keyframes contentfade {
   from {
     opacity: 0.1;
