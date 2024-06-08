@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/expertisecomponent.css";
-const expertisecomponent = ({
+
+const ExpertiseComponent = ({
   imgname,
   heading,
   content,
@@ -9,6 +10,15 @@ const expertisecomponent = ({
   list_elem_3,
   number,
 }) => {
+  useEffect(() => {
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const isIOS =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isSafari || isIOS) {
+      document.body.classList.add("no-animation");
+    }
+  }, []);
+
   return (
     <div className="expertisecomponent">
       <div className="leftexpertiseheader">
@@ -36,4 +46,4 @@ const expertisecomponent = ({
   );
 };
 
-export default expertisecomponent;
+export default ExpertiseComponent;
