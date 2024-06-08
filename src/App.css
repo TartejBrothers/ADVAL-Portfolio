@@ -51,10 +51,14 @@
 }
 
 .slide-up {
-  animation: slideUp linear;
   animation-timeline: view();
-  animation-range-start: 00px;
+  animation-range-start: 0vh;
   animation-range-end: 100vh;
+
+  animation-name: fade-in;
+  animation-fill-mode: both;
+  animation-duration: 100ms;
+  animation-timing-function: linear;
 }
 
 #testimonial {
