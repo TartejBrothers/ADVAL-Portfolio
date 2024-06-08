@@ -73,10 +73,14 @@
 }
 
 .contactmain {
-  animation: charactershow linear;
   animation-timeline: view();
-  animation-range-start: 00px;
+  animation-range-start: 0vh;
   animation-range-end: 100vh;
+
+  animation-name: charactershow;
+  animation-fill-mode: both;
+  animation-duration: 100ms;
+  animation-timing-function: linear;
 }
 
 @media screen and (max-width: 1000px) {

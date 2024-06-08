@@ -83,13 +83,14 @@
   }
 }
 .leftexpertisebody {
-  animation: expertisecontenthide;
   animation-timeline: view();
   animation-range-start: 60vh;
   animation-range-end: 90vh;
-  animation-fill-mode: forwards;
 
-  animation-duration: 2s;
+  animation-name: expertisecontenthide;
+  animation-fill-mode: both;
+  animation-duration: 100ms;
+  animation-timing-function: linear;
 }
 @media screen and (max-width: 1000px) {
   .rightexpertise {
