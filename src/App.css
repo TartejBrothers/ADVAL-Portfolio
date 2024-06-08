@@ -51,7 +51,7 @@
 }
 
 .slide-up {
-  animation: slideUp ease;
+  animation: slideUp linear;
   animation-timeline: view();
   animation-range-start: 00px;
   animation-range-end: 100vh;

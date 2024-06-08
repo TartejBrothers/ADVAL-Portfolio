@@ -73,7 +73,7 @@
 }
 
 .contactmain {
-  animation: charactershow;
+  animation: charactershow linear;
   animation-timeline: view();
   animation-range-start: 00px;
   animation-range-end: 100vh;

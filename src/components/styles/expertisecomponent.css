@@ -83,7 +83,7 @@
   }
 }
 .leftexpertisebody {
-  animation: expertisecontenthide;
+  animation: expertisecontenthide linear;
   animation-timeline: view();
   animation-range-start: 60vh;
   animation-range-end: 90vh;
