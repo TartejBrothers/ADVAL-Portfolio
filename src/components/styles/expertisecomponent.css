@@ -84,8 +84,8 @@
 }
 .leftexpertisebody {
   animation-timeline: view();
-  animation-range-start: 60vh;
-  animation-range-end: 90vh;
+  animation-range-start: 20vh;
+  animation-range-end: 80vh;
 
   animation-name: expertisecontenthide;
   animation-fill-mode: both;
