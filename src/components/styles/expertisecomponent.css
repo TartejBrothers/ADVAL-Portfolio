@@ -77,6 +77,7 @@
   }
   100% {
     max-height: 0;
+
     font-size: 0px;
     overflow: clip;
     padding-bottom: 0px;
@@ -108,4 +109,7 @@
   .leftexpertisebody {
     width: 100%;
   }
+}
+body.safari .leftexpertisebody {
+  animation: none;
 }
