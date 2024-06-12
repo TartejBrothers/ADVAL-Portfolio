@@ -49,7 +49,7 @@
 .slide-up {
   animation-timeline: view();
   animation-range-start: 60vh;
-  animation-range-end: 80vh;
+  animation-range-end: 100vh;
   animation-name: slideUp;
   animation-fill-mode: both;
   animation-duration: 100ms;
