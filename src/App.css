@@ -60,3 +60,7 @@
   z-index: 10;
   margin-top: -80vh;
 }
+body.no-animation #testimonial {
+  animation: none;
+  margin-top: 0vh;
+}
