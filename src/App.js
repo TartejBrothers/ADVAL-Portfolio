@@ -34,6 +34,14 @@ function App() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    const isIOS =
+      /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if (isSafari || isIOS) {
+      document.body.classList.add("no-animation");
+    }
+  }, []);
 
   return (
     <div className="App">
