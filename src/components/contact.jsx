@@ -23,7 +23,7 @@ export default function contact() {
           partner in success, every step of the way - anytime, anywhere
         </p>
         <div className="contactbuttons">
-          <a href="https://calendly.com/advalstudios" target="blank">
+          <a href="https://calendly.com/advalstudios/talk-to-us" target="blank">
             <button className="booknow">Book Meeting Now</button>
           </a>
           <button

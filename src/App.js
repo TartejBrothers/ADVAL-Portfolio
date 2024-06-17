@@ -20,7 +20,6 @@ function App() {
         const designsRect = designsRef.current.getBoundingClientRect();
         const designsTop = designsRect.top;
 
-        // Check if designs section is in view
         if (designsTop < window.innerHeight) {
           setAnimateTestimonial(true);
         } else {

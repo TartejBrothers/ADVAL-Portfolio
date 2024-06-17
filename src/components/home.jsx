@@ -42,11 +42,14 @@ export default function Home() {
             <ul>
               <li onClick={() => scrollToSection("home")}>Home</li>
               <li onClick={() => scrollToSection("expertise")}>Services</li>
-              <li onClick={() => scrollToSection("showcase")}>Portfolio</li>
+              <li onClick={() => scrollToSection("projects")}>Portfolio</li>
               <li onClick={() => scrollToSection("testimonial")}>Reviews</li>
               <li onClick={() => scrollToSection("contact")}>About</li>
               <li>
-                <a href="https://calendly.com/advalstudios" target="blank">
+                <a
+                  href="https://calendly.com/advalstudios/talk-to-us"
+                  target="blank"
+                >
                   <button className="contactbtn">Contact</button>
                 </a>
               </li>
@@ -93,7 +96,10 @@ export default function Home() {
             </li>
             <li>
               <img src={info} alt="Navigation Items" />
-              <a href="https://calendly.com/advalstudios" target="blank">
+              <a
+                href="https://calendly.com/advalstudios/talk-to-us"
+                target="blank"
+              >
                 Contact
               </a>
             </li>
@@ -116,7 +122,7 @@ export default function Home() {
             More than an agency, we are your partner in success, every step of
             the way anytime, anywhere
           </p>
-          <a href="https://calendly.com/advalstudios" target="blank">
+          <a href="https://calendly.com/advalstudios/talk-to-us" target="blank">
             <button className="homecenterbutton">Free Consultation</button>
           </a>
           <div className="homebottommobile">
