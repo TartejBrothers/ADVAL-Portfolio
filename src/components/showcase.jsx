@@ -9,7 +9,9 @@ import showcase3 from "./assests/showcase3.png";
 export default function showcase() {
   return (
     <div className="showcase">
-      <h1 className="commonheader">Our Projects</h1>
+      <h1 className="commonheader" id="projects">
+        Our Projects
+      </h1>
       <div className="showcasedesktop">
         <ShowcaseComponent
           heading="STUDENTIFY"
@@ -17,7 +19,7 @@ export default function showcase() {
           speaker="GaganDeep"
           post="(Senior Developer)"
           image={showcase1}
-          link="https://studentify-inc.netlify.com"
+          link="https://studentify-inc.netlify.app"
         />
         <ShowcaseComponentReverse
           heading="ADLIFE NGO"
@@ -45,7 +47,7 @@ export default function showcase() {
           speaker="GaganDeep"
           post="(Senior Developer)"
           image={showcase1}
-          link="https://studentify-inc.netlify.com"
+          link="https://studentify-inc.netlify.app"
         />
         <ShowcaseMobile
           heading="ADLIFE NGO"
