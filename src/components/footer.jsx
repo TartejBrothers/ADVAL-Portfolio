@@ -4,9 +4,9 @@ import logo from "./assests/icons/logo.png";
 import arrowsubmit from "./assests/icons/arrowsubmit.svg";
 import phone from "./assests/icons/phone.png";
 import email from "./assests/icons/email.png";
-import twitter from "./assests/icons/twitter.svg";
+// import twitter from "./assests/icons/twitter.svg";
 import linkedin from "./assests/icons/linkedin.svg";
-import instagram from "./assests/icons/instagram.svg";
+import xlogo from "./assests/icons/x.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId) => {
@@ -83,14 +83,26 @@ export default function Footer() {
         </div>
         <div className="footerrightmost">
           <ul>
-            <li>
+            {/* <li>
               <img src={twitter} alt="twitter" />
+            </li> */}
+            <li>
+              <a
+                href="https://www.linkedin.com/company/adval-studios/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedin} alt="LinkedIn" />
+              </a>
             </li>
             <li>
-              <img src={linkedin} alt="LinkedIn" />
-            </li>
-            <li>
-              <img src={instagram} alt="Instagram" />
+              <a
+                href="https://x.com/mayankk48?t=2Nyp4IkIdNdih_PsSx9MKg"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img src={xlogo} alt="X" />
+              </a>
             </li>
           </ul>
         </div>
